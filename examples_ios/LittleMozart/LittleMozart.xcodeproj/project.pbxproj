@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1853868C1446EF46000DE2A9 /* mozart_rules_without_comments.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1853868B1446EF46000DE2A9 /* mozart_rules_without_comments.xml */; };
+		18572DE5144F068D00B42519 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18572DE3144F068D00B42519 /* MainWindow-iPad.xib */; };
+		18572DEB144F0DF800B42519 /* whitey.png in Resources */ = {isa = PBXBuildFile; fileRef = 18572DEA144F0DF800B42519 /* whitey.png */; };
+		1865317E1451AB9300520944 /* LittleMozartViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865317C1451AB9300520944 /* LittleMozartViewControlleriPad.m */; };
+		1868F7A01443320B00B61726 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F79F1443320B00B61726 /* UIKit.framework */; };
+		1868F7A21443320B00B61726 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F7A11443320B00B61726 /* Foundation.framework */; };
+		1868F7A41443320B00B61726 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868F7A31443320B00B61726 /* CoreGraphics.framework */; };
+		1868F7AA1443320B00B61726 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1868F7A81443320B00B61726 /* InfoPlist.strings */; };
+		1868F7AC1443320B00B61726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7AB1443320B00B61726 /* main.m */; };
+		1868F7B01443320B00B61726 /* LittleMozartAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7AF1443320B00B61726 /* LittleMozartAppDelegate.m */; };
+		1868F7B31443320B00B61726 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1868F7B11443320B00B61726 /* MainWindow.xib */; };
+		1868F7B61443320B00B61726 /* LittleMozartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7B51443320B00B61726 /* LittleMozartViewController.m */; };
+		1868F7B91443320B00B61726 /* LittleMozartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1868F7B71443320B00B61726 /* LittleMozartViewController.xib */; };
+		1868F80A14449C1A00B61726 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7CF14449C1A00B61726 /* GDataXMLNode.m */; };
+		1868F80C14449C1A00B61726 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7D314449C1A00B61726 /* Brain.m */; };
+		1868F80D14449C1A00B61726 /* CnotiMind.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7D614449C1A00B61726 /* CnotiMind.m */; };
+		1868F80E14449C1A00B61726 /* Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7D814449C1A00B61726 /* Emotion.m */; };
+		1868F80F14449C1A00B61726 /* MemoryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7DB14449C1A00B61726 /* MemoryEvent.m */; };
+		1868F81014449C1A00B61726 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7DD14449C1A00B61726 /* Node.m */; };
+		1868F81114449C1A00B61726 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7DF14449C1A00B61726 /* NSMutableArray+QueueAdditions.m */; };
+		1868F81214449C1A00B61726 /* Perception.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7E214449C1A00B61726 /* Perception.m */; };
+		1868F81314449C1A00B61726 /* ActionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7E514449C1A00B61726 /* ActionNode.m */; };
+		1868F81414449C1A00B61726 /* ClearMemoryNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7E714449C1A00B61726 /* ClearMemoryNode.m */; };
+		1868F81514449C1A00B61726 /* ConditionDataMiningNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7E914449C1A00B61726 /* ConditionDataMiningNode.m */; };
+		1868F81614449C1A00B61726 /* ConditionEmotionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7EB14449C1A00B61726 /* ConditionEmotionNode.m */; };
+		1868F81714449C1A00B61726 /* ConditionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7ED14449C1A00B61726 /* ConditionNode.m */; };
+		1868F81814449C1A00B61726 /* ConditionPerceptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7EF14449C1A00B61726 /* ConditionPerceptionNode.m */; };
+		1868F81914449C1A00B61726 /* ConditionPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7F114449C1A00B61726 /* ConditionPropertyNode.m */; };
+		1868F81A14449C1A00B61726 /* ConditionVariableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7F314449C1A00B61726 /* ConditionVariableNode.m */; };
+		1868F81B14449C1A00B61726 /* DataMiningNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7F514449C1A00B61726 /* DataMiningNode.m */; };
+		1868F81C14449C1A00B61726 /* DeleteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7F714449C1A00B61726 /* DeleteNode.m */; };
+		1868F81D14449C1A00B61726 /* EmotionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7F914449C1A00B61726 /* EmotionNode.m */; };
+		1868F81E14449C1A00B61726 /* MathOperationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7FB14449C1A00B61726 /* MathOperationNode.m */; };
+		1868F81F14449C1A00B61726 /* PropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7FD14449C1A00B61726 /* PropertyNode.m */; };
+		1868F82014449C1A00B61726 /* RandomNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F7FF14449C1A00B61726 /* RandomNode.m */; };
+		1868F82114449C1A00B61726 /* RootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F80114449C1A00B61726 /* RootNode.m */; };
+		1868F82214449C1A00B61726 /* RuleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F80314449C1A00B61726 /* RuleNode.m */; };
+		1868F82314449C1A00B61726 /* RulesXmlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F80514449C1A00B61726 /* RulesXmlHandler.m */; };
+		1868F82414449C1A00B61726 /* StorageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F80714449C1A00B61726 /* StorageNode.m */; };
+		1868F82514449C1A00B61726 /* SettingsXmlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868F80914449C1A00B61726 /* SettingsXmlHandler.m */; };
+		18B41B031444AAF6008D9CE6 /* KickMeRules_emotion_reaction.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFA1444AAF6008D9CE6 /* KickMeRules_emotion_reaction.xml */; };
+		18B41B041444AAF6008D9CE6 /* KickMeRules_remember_how_many_times_it_was_kicked.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFB1444AAF6008D9CE6 /* KickMeRules_remember_how_many_times_it_was_kicked.xml */; };
+		18B41B051444AAF6008D9CE6 /* KickMeRules_remember_who_last_kick_the_brain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFC1444AAF6008D9CE6 /* KickMeRules_remember_who_last_kick_the_brain.xml */; };
+		18B41B061444AAF6008D9CE6 /* mozart_mind.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFD1444AAF6008D9CE6 /* mozart_mind.xml */; };
+		18B41B071444AAF6008D9CE6 /* mozart_rules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFE1444AAF6008D9CE6 /* mozart_rules.xml */; };
+		18B41B081444AAF6008D9CE6 /* mozart_tutoring.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41AFF1444AAF6008D9CE6 /* mozart_tutoring.xml */; };
+		18B41B091444AAF6008D9CE6 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18B41B001444AAF6008D9CE6 /* README */; };
+		18B41B0A1444AAF6008D9CE6 /* simple_rules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41B011444AAF6008D9CE6 /* simple_rules.xml */; };
+		18B41B0B1444AAF6008D9CE6 /* single_emotion_rules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18B41B021444AAF6008D9CE6 /* single_emotion_rules.xml */; };
+		18E8879B1451AFAF0050227C /* LittleMozartViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8879A1451AFAF0050227C /* LittleMozartViewControlleriPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1853868B1446EF46000DE2A9 /* mozart_rules_without_comments.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mozart_rules_without_comments.xml; sourceTree = "<group>"; };
+		18572DE4144F068D00B42519 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		18572DEA144F0DF800B42519 /* whitey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitey.png; sourceTree = "<group>"; };
+		1865317B1451AB9300520944 /* LittleMozartViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleMozartViewControlleriPad.h; sourceTree = "<group>"; };
+		1865317C1451AB9300520944 /* LittleMozartViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleMozartViewControlleriPad.m; sourceTree = "<group>"; };
+		1868F79B1443320B00B61726 /* LittleMozart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleMozart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868F79F1443320B00B61726 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1868F7A11443320B00B61726 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1868F7A31443320B00B61726 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1868F7A71443320B00B61726 /* LittleMozart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LittleMozart-Info.plist"; sourceTree = "<group>"; };
+		1868F7A91443320B00B61726 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1868F7AB1443320B00B61726 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1868F7AD1443320B00B61726 /* LittleMozart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleMozart-Prefix.pch"; sourceTree = "<group>"; };
+		1868F7AE1443320B00B61726 /* LittleMozartAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LittleMozartAppDelegate.h; sourceTree = "<group>"; };
+		1868F7AF1443320B00B61726 /* LittleMozartAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LittleMozartAppDelegate.m; sourceTree = "<group>"; };
+		1868F7B21443320B00B61726 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1868F7B41443320B00B61726 /* LittleMozartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LittleMozartViewController.h; sourceTree = "<group>"; };
+		1868F7B51443320B00B61726 /* LittleMozartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LittleMozartViewController.m; sourceTree = "<group>"; };
+		1868F7B81443320B00B61726 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LittleMozartViewController.xib; sourceTree = "<group>"; };
+		1868F7CE14449C1A00B61726 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		1868F7CF14449C1A00B61726 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		1868F7D214449C1A00B61726 /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		1868F7D314449C1A00B61726 /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
+		1868F7D414449C1A00B61726 /* CnotiMind-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CnotiMind-Prefix.pch"; sourceTree = "<group>"; };
+		1868F7D514449C1A00B61726 /* CnotiMind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CnotiMind.h; sourceTree = "<group>"; };
+		1868F7D614449C1A00B61726 /* CnotiMind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CnotiMind.m; sourceTree = "<group>"; };
+		1868F7D714449C1A00B61726 /* Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emotion.h; sourceTree = "<group>"; };
+		1868F7D814449C1A00B61726 /* Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emotion.m; sourceTree = "<group>"; };
+		1868F7D914449C1A00B61726 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		1868F7DA14449C1A00B61726 /* MemoryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryEvent.h; sourceTree = "<group>"; };
+		1868F7DB14449C1A00B61726 /* MemoryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryEvent.m; sourceTree = "<group>"; };
+		1868F7DC14449C1A00B61726 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1868F7DD14449C1A00B61726 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		1868F7DE14449C1A00B61726 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		1868F7DF14449C1A00B61726 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		1868F7E014449C1A00B61726 /* ObjectToXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectToXML.h; sourceTree = "<group>"; };
+		1868F7E114449C1A00B61726 /* Perception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perception.h; sourceTree = "<group>"; };
+		1868F7E214449C1A00B61726 /* Perception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perception.m; sourceTree = "<group>"; };
+		1868F7E414449C1A00B61726 /* ActionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionNode.h; sourceTree = "<group>"; };
+		1868F7E514449C1A00B61726 /* ActionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionNode.m; sourceTree = "<group>"; };
+		1868F7E614449C1A00B61726 /* ClearMemoryNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearMemoryNode.h; sourceTree = "<group>"; };
+		1868F7E714449C1A00B61726 /* ClearMemoryNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearMemoryNode.m; sourceTree = "<group>"; };
+		1868F7E814449C1A00B61726 /* ConditionDataMiningNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionDataMiningNode.h; sourceTree = "<group>"; };
+		1868F7E914449C1A00B61726 /* ConditionDataMiningNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionDataMiningNode.m; sourceTree = "<group>"; };
+		1868F7EA14449C1A00B61726 /* ConditionEmotionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionEmotionNode.h; sourceTree = "<group>"; };
+		1868F7EB14449C1A00B61726 /* ConditionEmotionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionEmotionNode.m; sourceTree = "<group>"; };
+		1868F7EC14449C1A00B61726 /* ConditionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionNode.h; sourceTree = "<group>"; };
+		1868F7ED14449C1A00B61726 /* ConditionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionNode.m; sourceTree = "<group>"; };
+		1868F7EE14449C1A00B61726 /* ConditionPerceptionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionPerceptionNode.h; sourceTree = "<group>"; };
+		1868F7EF14449C1A00B61726 /* ConditionPerceptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionPerceptionNode.m; sourceTree = "<group>"; };
+		1868F7F014449C1A00B61726 /* ConditionPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionPropertyNode.h; sourceTree = "<group>"; };
+		1868F7F114449C1A00B61726 /* ConditionPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionPropertyNode.m; sourceTree = "<group>"; };
+		1868F7F214449C1A00B61726 /* ConditionVariableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionVariableNode.h; sourceTree = "<group>"; };
+		1868F7F314449C1A00B61726 /* ConditionVariableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConditionVariableNode.m; sourceTree = "<group>"; };
+		1868F7F414449C1A00B61726 /* DataMiningNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMiningNode.h; sourceTree = "<group>"; };
+		1868F7F514449C1A00B61726 /* DataMiningNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMiningNode.m; sourceTree = "<group>"; };
+		1868F7F614449C1A00B61726 /* DeleteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteNode.h; sourceTree = "<group>"; };
+		1868F7F714449C1A00B61726 /* DeleteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteNode.m; sourceTree = "<group>"; };
+		1868F7F814449C1A00B61726 /* EmotionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionNode.h; sourceTree = "<group>"; };
+		1868F7F914449C1A00B61726 /* EmotionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionNode.m; sourceTree = "<group>"; };
+		1868F7FA14449C1A00B61726 /* MathOperationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathOperationNode.h; sourceTree = "<group>"; };
+		1868F7FB14449C1A00B61726 /* MathOperationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathOperationNode.m; sourceTree = "<group>"; };
+		1868F7FC14449C1A00B61726 /* PropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyNode.h; sourceTree = "<group>"; };
+		1868F7FD14449C1A00B61726 /* PropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyNode.m; sourceTree = "<group>"; };
+		1868F7FE14449C1A00B61726 /* RandomNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomNode.h; sourceTree = "<group>"; };
+		1868F7FF14449C1A00B61726 /* RandomNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomNode.m; sourceTree = "<group>"; };
+		1868F80014449C1A00B61726 /* RootNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNode.h; sourceTree = "<group>"; };
+		1868F80114449C1A00B61726 /* RootNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNode.m; sourceTree = "<group>"; };
+		1868F80214449C1A00B61726 /* RuleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleNode.h; sourceTree = "<group>"; };
+		1868F80314449C1A00B61726 /* RuleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleNode.m; sourceTree = "<group>"; };
+		1868F80414449C1A00B61726 /* RulesXmlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesXmlHandler.h; sourceTree = "<group>"; };
+		1868F80514449C1A00B61726 /* RulesXmlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesXmlHandler.m; sourceTree = "<group>"; };
+		1868F80614449C1A00B61726 /* StorageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageNode.h; sourceTree = "<group>"; };
+		1868F80714449C1A00B61726 /* StorageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageNode.m; sourceTree = "<group>"; };
+		1868F80814449C1A00B61726 /* SettingsXmlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsXmlHandler.h; sourceTree = "<group>"; };
+		1868F80914449C1A00B61726 /* SettingsXmlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsXmlHandler.m; sourceTree = "<group>"; };
+		18B41AF01444A44F008D9CE6 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		18B41AFA1444AAF6008D9CE6 /* KickMeRules_emotion_reaction.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KickMeRules_emotion_reaction.xml; sourceTree = "<group>"; };
+		18B41AFB1444AAF6008D9CE6 /* KickMeRules_remember_how_many_times_it_was_kicked.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KickMeRules_remember_how_many_times_it_was_kicked.xml; sourceTree = "<group>"; };
+		18B41AFC1444AAF6008D9CE6 /* KickMeRules_remember_who_last_kick_the_brain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KickMeRules_remember_who_last_kick_the_brain.xml; sourceTree = "<group>"; };
+		18B41AFD1444AAF6008D9CE6 /* mozart_mind.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mozart_mind.xml; sourceTree = "<group>"; };
+		18B41AFE1444AAF6008D9CE6 /* mozart_rules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mozart_rules.xml; sourceTree = "<group>"; };
+		18B41AFF1444AAF6008D9CE6 /* mozart_tutoring.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mozart_tutoring.xml; sourceTree = "<group>"; };
+		18B41B001444AAF6008D9CE6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		18B41B011444AAF6008D9CE6 /* simple_rules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simple_rules.xml; sourceTree = "<group>"; };
+		18B41B021444AAF6008D9CE6 /* single_emotion_rules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = single_emotion_rules.xml; sourceTree = "<group>"; };
+		18E8879A1451AFAF0050227C /* LittleMozartViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LittleMozartViewControlleriPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1868F7981443320B00B61726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868F7A01443320B00B61726 /* UIKit.framework in Frameworks */,
+				1868F7A21443320B00B61726 /* Foundation.framework in Frameworks */,
+				1868F7A41443320B00B61726 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18572DE2144F068900B42519 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				18E8879A1451AFAF0050227C /* LittleMozartViewControlleriPad.xib */,
+				18572DE3144F068D00B42519 /* MainWindow-iPad.xib */,
+				1865317B1451AB9300520944 /* LittleMozartViewControlleriPad.h */,
+				1865317C1451AB9300520944 /* LittleMozartViewControlleriPad.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		18572DE8144F0DF800B42519 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18572DE9144F0DF800B42519 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18572DE9144F0DF800B42519 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				18572DEA144F0DF800B42519 /* whitey.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1868F7901443320B00B61726 = {
+			isa = PBXGroup;
+			children = (
+				1868F7CB14449C1A00B61726 /* CnotiMind */,
+				1868F7A51443320B00B61726 /* LittleMozart */,
+				1868F79E1443320B00B61726 /* Frameworks */,
+				1868F79C1443320B00B61726 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1868F79C1443320B00B61726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1868F79B1443320B00B61726 /* LittleMozart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1868F79E1443320B00B61726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1868F79F1443320B00B61726 /* UIKit.framework */,
+				1868F7A11443320B00B61726 /* Foundation.framework */,
+				1868F7A31443320B00B61726 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1868F7A51443320B00B61726 /* LittleMozart */ = {
+			isa = PBXGroup;
+			children = (
+				18572DE2144F068900B42519 /* iPad */,
+				18B41AF91444AAF6008D9CE6 /* xml */,
+				18B41AF01444A44F008D9CE6 /* Macros.h */,
+				1868F7AE1443320B00B61726 /* LittleMozartAppDelegate.h */,
+				1868F7AF1443320B00B61726 /* LittleMozartAppDelegate.m */,
+				1868F7B11443320B00B61726 /* MainWindow.xib */,
+				1868F7B41443320B00B61726 /* LittleMozartViewController.h */,
+				1868F7B51443320B00B61726 /* LittleMozartViewController.m */,
+				1868F7B71443320B00B61726 /* LittleMozartViewController.xib */,
+				1868F7A61443320B00B61726 /* Supporting Files */,
+			);
+			path = LittleMozart;
+			sourceTree = "<group>";
+		};
+		1868F7A61443320B00B61726 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18572DE8144F0DF800B42519 /* Resources */,
+				1868F7A71443320B00B61726 /* LittleMozart-Info.plist */,
+				1868F7A81443320B00B61726 /* InfoPlist.strings */,
+				1868F7AB1443320B00B61726 /* main.m */,
+				1868F7AD1443320B00B61726 /* LittleMozart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1868F7CB14449C1A00B61726 /* CnotiMind */ = {
+			isa = PBXGroup;
+			children = (
+				1868F7CC14449C1A00B61726 /* 3rdParty */,
+				1868F7D214449C1A00B61726 /* Brain.h */,
+				1868F7D314449C1A00B61726 /* Brain.m */,
+				1868F7D414449C1A00B61726 /* CnotiMind-Prefix.pch */,
+				1868F7D514449C1A00B61726 /* CnotiMind.h */,
+				1868F7D614449C1A00B61726 /* CnotiMind.m */,
+				1868F7D714449C1A00B61726 /* Emotion.h */,
+				1868F7D814449C1A00B61726 /* Emotion.m */,
+				1868F7D914449C1A00B61726 /* Macros.h */,
+				1868F7DA14449C1A00B61726 /* MemoryEvent.h */,
+				1868F7DB14449C1A00B61726 /* MemoryEvent.m */,
+				1868F7DC14449C1A00B61726 /* Node.h */,
+				1868F7DD14449C1A00B61726 /* Node.m */,
+				1868F7DE14449C1A00B61726 /* NSMutableArray+QueueAdditions.h */,
+				1868F7DF14449C1A00B61726 /* NSMutableArray+QueueAdditions.m */,
+				1868F7E014449C1A00B61726 /* ObjectToXML.h */,
+				1868F7E114449C1A00B61726 /* Perception.h */,
+				1868F7E214449C1A00B61726 /* Perception.m */,
+				1868F7E314449C1A00B61726 /* rules */,
+				1868F80814449C1A00B61726 /* SettingsXmlHandler.h */,
+				1868F80914449C1A00B61726 /* SettingsXmlHandler.m */,
+			);
+			name = CnotiMind;
+			path = ../../src_ios/CnotiMind;
+			sourceTree = "<group>";
+		};
+		1868F7CC14449C1A00B61726 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1868F7CD14449C1A00B61726 /* GDataXML */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		1868F7CD14449C1A00B61726 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				1868F7CE14449C1A00B61726 /* GDataXMLNode.h */,
+				1868F7CF14449C1A00B61726 /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		1868F7E314449C1A00B61726 /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				1868F7E414449C1A00B61726 /* ActionNode.h */,
+				1868F7E514449C1A00B61726 /* ActionNode.m */,
+				1868F7E614449C1A00B61726 /* ClearMemoryNode.h */,
+				1868F7E714449C1A00B61726 /* ClearMemoryNode.m */,
+				1868F7E814449C1A00B61726 /* ConditionDataMiningNode.h */,
+				1868F7E914449C1A00B61726 /* ConditionDataMiningNode.m */,
+				1868F7EA14449C1A00B61726 /* ConditionEmotionNode.h */,
+				1868F7EB14449C1A00B61726 /* ConditionEmotionNode.m */,
+				1868F7EC14449C1A00B61726 /* ConditionNode.h */,
+				1868F7ED14449C1A00B61726 /* ConditionNode.m */,
+				1868F7EE14449C1A00B61726 /* ConditionPerceptionNode.h */,
+				1868F7EF14449C1A00B61726 /* ConditionPerceptionNode.m */,
+				1868F7F014449C1A00B61726 /* ConditionPropertyNode.h */,
+				1868F7F114449C1A00B61726 /* ConditionPropertyNode.m */,
+				1868F7F214449C1A00B61726 /* ConditionVariableNode.h */,
+				1868F7F314449C1A00B61726 /* ConditionVariableNode.m */,
+				1868F7F414449C1A00B61726 /* DataMiningNode.h */,
+				1868F7F514449C1A00B61726 /* DataMiningNode.m */,
+				1868F7F614449C1A00B61726 /* DeleteNode.h */,
+				1868F7F714449C1A00B61726 /* DeleteNode.m */,
+				1868F7F814449C1A00B61726 /* EmotionNode.h */,
+				1868F7F914449C1A00B61726 /* EmotionNode.m */,
+				1868F7FA14449C1A00B61726 /* MathOperationNode.h */,
+				1868F7FB14449C1A00B61726 /* MathOperationNode.m */,
+				1868F7FC14449C1A00B61726 /* PropertyNode.h */,
+				1868F7FD14449C1A00B61726 /* PropertyNode.m */,
+				1868F7FE14449C1A00B61726 /* RandomNode.h */,
+				1868F7FF14449C1A00B61726 /* RandomNode.m */,
+				1868F80014449C1A00B61726 /* RootNode.h */,
+				1868F80114449C1A00B61726 /* RootNode.m */,
+				1868F80214449C1A00B61726 /* RuleNode.h */,
+				1868F80314449C1A00B61726 /* RuleNode.m */,
+				1868F80414449C1A00B61726 /* RulesXmlHandler.h */,
+				1868F80514449C1A00B61726 /* RulesXmlHandler.m */,
+				1868F80614449C1A00B61726 /* StorageNode.h */,
+				1868F80714449C1A00B61726 /* StorageNode.m */,
+			);
+			path = rules;
+			sourceTree = "<group>";
+		};
+		18B41AF91444AAF6008D9CE6 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				18B41AFA1444AAF6008D9CE6 /* KickMeRules_emotion_reaction.xml */,
+				18B41AFB1444AAF6008D9CE6 /* KickMeRules_remember_how_many_times_it_was_kicked.xml */,
+				18B41AFC1444AAF6008D9CE6 /* KickMeRules_remember_who_last_kick_the_brain.xml */,
+				18B41AFD1444AAF6008D9CE6 /* mozart_mind.xml */,
+				18B41AFE1444AAF6008D9CE6 /* mozart_rules.xml */,
+				18B41AFF1444AAF6008D9CE6 /* mozart_tutoring.xml */,
+				18B41B001444AAF6008D9CE6 /* README */,
+				18B41B011444AAF6008D9CE6 /* simple_rules.xml */,
+				18B41B021444AAF6008D9CE6 /* single_emotion_rules.xml */,
+				1853868B1446EF46000DE2A9 /* mozart_rules_without_comments.xml */,
+			);
+			name = xml;
+			path = ../../xml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1868F79A1443320B00B61726 /* LittleMozart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868F7BC1443320B00B61726 /* Build configuration list for PBXNativeTarget "LittleMozart" */;
+			buildPhases = (
+				1868F7971443320B00B61726 /* Sources */,
+				1868F7981443320B00B61726 /* Frameworks */,
+				1868F7991443320B00B61726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LittleMozart;
+			productName = LittleMozart;
+			productReference = 1868F79B1443320B00B61726 /* LittleMozart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1868F7921443320B00B61726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Universidade de Coimbra";
+			};
+			buildConfigurationList = 1868F7951443320B00B61726 /* Build configuration list for PBXProject "LittleMozart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1868F7901443320B00B61726;
+			productRefGroup = 1868F79C1443320B00B61726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1868F79A1443320B00B61726 /* LittleMozart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1868F7991443320B00B61726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868F7AA1443320B00B61726 /* InfoPlist.strings in Resources */,
+				1868F7B31443320B00B61726 /* MainWindow.xib in Resources */,
+				1868F7B91443320B00B61726 /* LittleMozartViewController.xib in Resources */,
+				18B41B031444AAF6008D9CE6 /* KickMeRules_emotion_reaction.xml in Resources */,
+				18B41B041444AAF6008D9CE6 /* KickMeRules_remember_how_many_times_it_was_kicked.xml in Resources */,
+				18B41B051444AAF6008D9CE6 /* KickMeRules_remember_who_last_kick_the_brain.xml in Resources */,
+				18B41B061444AAF6008D9CE6 /* mozart_mind.xml in Resources */,
+				18B41B071444AAF6008D9CE6 /* mozart_rules.xml in Resources */,
+				18B41B081444AAF6008D9CE6 /* mozart_tutoring.xml in Resources */,
+				18B41B091444AAF6008D9CE6 /* README in Resources */,
+				18B41B0A1444AAF6008D9CE6 /* simple_rules.xml in Resources */,
+				18B41B0B1444AAF6008D9CE6 /* single_emotion_rules.xml in Resources */,
+				1853868C1446EF46000DE2A9 /* mozart_rules_without_comments.xml in Resources */,
+				18572DE5144F068D00B42519 /* MainWindow-iPad.xib in Resources */,
+				18572DEB144F0DF800B42519 /* whitey.png in Resources */,
+				18E8879B1451AFAF0050227C /* LittleMozartViewControlleriPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1868F7971443320B00B61726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868F7AC1443320B00B61726 /* main.m in Sources */,
+				1868F7B01443320B00B61726 /* LittleMozartAppDelegate.m in Sources */,
+				1868F7B61443320B00B61726 /* LittleMozartViewController.m in Sources */,
+				1868F80A14449C1A00B61726 /* GDataXMLNode.m in Sources */,
+				1868F80C14449C1A00B61726 /* Brain.m in Sources */,
+				1868F80D14449C1A00B61726 /* CnotiMind.m in Sources */,
+				1868F80E14449C1A00B61726 /* Emotion.m in Sources */,
+				1868F80F14449C1A00B61726 /* MemoryEvent.m in Sources */,
+				1868F81014449C1A00B61726 /* Node.m in Sources */,
+				1868F81114449C1A00B61726 /* NSMutableArray+QueueAdditions.m in Sources */,
+				1868F81214449C1A00B61726 /* Perception.m in Sources */,
+				1868F81314449C1A00B61726 /* ActionNode.m in Sources */,
+				1868F81414449C1A00B61726 /* ClearMemoryNode.m in Sources */,
+				1868F81514449C1A00B61726 /* ConditionDataMiningNode.m in Sources */,
+				1868F81614449C1A00B61726 /* ConditionEmotionNode.m in Sources */,
+				1868F81714449C1A00B61726 /* ConditionNode.m in Sources */,
+				1868F81814449C1A00B61726 /* ConditionPerceptionNode.m in Sources */,
+				1868F81914449C1A00B61726 /* ConditionPropertyNode.m in Sources */,
+				1868F81A14449C1A00B61726 /* ConditionVariableNode.m in Sources */,
+				1868F81B14449C1A00B61726 /* DataMiningNode.m in Sources */,
+				1868F81C14449C1A00B61726 /* DeleteNode.m in Sources */,
+				1868F81D14449C1A00B61726 /* EmotionNode.m in Sources */,
+				1868F81E14449C1A00B61726 /* MathOperationNode.m in Sources */,
+				1868F81F14449C1A00B61726 /* PropertyNode.m in Sources */,
+				1868F82014449C1A00B61726 /* RandomNode.m in Sources */,
+				1868F82114449C1A00B61726 /* RootNode.m in Sources */,
+				1868F82214449C1A00B61726 /* RuleNode.m in Sources */,
+				1868F82314449C1A00B61726 /* RulesXmlHandler.m in Sources */,
+				1868F82414449C1A00B61726 /* StorageNode.m in Sources */,
+				1868F82514449C1A00B61726 /* SettingsXmlHandler.m in Sources */,
+				1865317E1451AB9300520944 /* LittleMozartViewControlleriPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18572DE3144F068D00B42519 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572DE4144F068D00B42519 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		1868F7A81443320B00B61726 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868F7A91443320B00B61726 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1868F7B11443320B00B61726 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868F7B21443320B00B61726 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		1868F7B71443320B00B61726 /* LittleMozartViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868F7B81443320B00B61726 /* en */,
+			);
+			name = LittleMozartViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1868F7BA1443320B00B61726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gonçalo Rodrigues (H3CVZBVPU8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = "-lxml2";
+				PROVISIONING_PROFILE = "457B5089-F28C-45DD-98E0-839E9AA7CF2A";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1868F7BB1443320B00B61726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gonçalo Rodrigues (H3CVZBVPU8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = "-lxml2";
+				PROVISIONING_PROFILE = "457B5089-F28C-45DD-98E0-839E9AA7CF2A";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1868F7BD1443320B00B61726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LittleMozart/LittleMozart-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "LittleMozart/LittleMozart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-libxml2",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1868F7BE1443320B00B61726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LittleMozart/LittleMozart-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "LittleMozart/LittleMozart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-libxml2",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1868F7951443320B00B61726 /* Build configuration list for PBXProject "LittleMozart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868F7BA1443320B00B61726 /* Debug */,
+				1868F7BB1443320B00B61726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868F7BC1443320B00B61726 /* Build configuration list for PBXNativeTarget "LittleMozart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868F7BD1443320B00B61726 /* Debug */,
+				1868F7BE1443320B00B61726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1868F7921443320B00B61726 /* Project object */;
+}

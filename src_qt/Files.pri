@@ -1,0 +1,28 @@
+HEADERS += \
+	Brain.h \
+	CnotiMind_global.h \
+	Competences.h \
+	Emotion.h \
+	MemoryEvent.h \
+	Node.h \
+	Perception.h \
+	SettingsXmlHandler.h \
+	CnotiMind.h \
+	ObjectToXml.h \
+	MemoryXmlHandler.h \
+    ActionModifier.h \
+    ActionModifiersXmlHandler.h
+
+SOURCES += \
+	Brain.cpp \
+	Competences.cpp \
+	Emotion.cpp \
+	MemoryEvent.cpp \
+	Node.cpp \
+	Perception.cpp \
+	SettingsXmlHandler.cpp \
+	CnotiMind.cpp \
+	ObjectToXml.cpp \
+	MemoryXmlHandler.cpp \
+    ActionModifier.cpp \
+    ActionModifiersXmlHandler.cpp
